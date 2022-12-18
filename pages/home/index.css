@@ -1,0 +1,282 @@
+/* Desenvolva sua estilização aqui...*/
+
+.container{
+    width: 100%;
+    height: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:baseline;
+}
+
+.content-left {
+width: 50%;
+max-width: 100%;
+height: 720px;
+display: flex;
+align-items: center;
+background: var(--color-brand-1);
+}
+        
+.content-left-data {
+    width: 431px;
+    max-width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+        
+.data-logo {
+    font-size: 30px;
+    color: var(--color-grey-7);
+    animation: myAnim2 1s ease-in 0s 1 reverse both;
+    display: flex;
+    gap: 20px;
+
+
+
+    
+
+}
+
+
+
+
+
+
+
+
+@keyframes myAnim2 {
+	0% {
+		transform: translate(0);
+	}
+
+	20% {
+		transform: translate(-2px, 2px);
+	}
+
+	40% {
+		transform: translate(-2px, -2px);
+	}
+
+	60% {
+		transform: translate(2px, 2px);
+	}
+
+	80% {
+		transform: translate(2px, -2px);
+	}
+
+	100% {
+		transform: translate(0);
+	}
+}
+        
+.data-text-intro {
+    color: var(--color-grey-7);
+    font-weight: normal;
+    font-size: 20px;
+}
+        
+.data_recent-search {
+    width: 480px;
+    max-width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+}
+        
+.recent-search-title {
+    width: 200px;
+    color: var(--color-grey-7);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+        
+        
+.recent-search-ul {
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2px;
+}
+
+
+.recent-search-li{
+  width: 80px;
+  height: 50px;
+
+  animation: myAnim 1s ease-in-out 0s reverse backwards;
+}
+      
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+.recent-search-users {
+    margin: 0 5px;
+}
+
+.search-users-img{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+
+.icon-message{
+    background: #FFFFFF;
+    font-weight: bold;
+    position: static;
+    padding: 5px;
+    border-radius: 4px;
+    width: 124px;
+    top: 10px;
+    left: 0px;
+    display: none;
+    z-index: 2;
+}
+
+.icon-message-active{
+    display:block;
+}
+
+
+
+.content-right{
+    width: 50%;
+    height: 720px;
+    display: flex;
+    align-items: center;
+    background: var(--color-grey-2);
+
+}
+
+.content-right-data{
+    width: 431px;
+    max-width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.data-right_title{
+    width: 240px;
+    height: 30px;
+    max-width: 100%;
+    font-size: 20px;
+    font-weight: 100;
+    color: var(--color-grey-7);
+
+}   
+
+.data-right_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    height: 150px;
+
+    
+
+}
+
+.form-label{
+    color: var(--color-grey-7);
+    font-size: 14px;
+    font-weight: bold;
+
+
+
+}
+
+.form-input{
+    width: 316px;
+    height: 35px;
+    border: solid var(--color-grey-7) 0.1px;
+    border-radius: 4px;
+    background: var(--color-grey-2);
+    color: var(--color-grey-7);
+    padding: 5px;
+    font-size: 14px;
+}
+
+.form-button-see-profile>img{
+    width: 25px;
+    height: 25px;
+}
+
+.form-label-not-found{
+    font-size: 13px;
+    font-weight: bold;
+    display: none;
+    color: red;
+
+}
+
+.form-label-not-found-active{
+    display: flex;
+}
+
+
+.form-label-found{
+    font-size: 13px;
+    display: flex;
+    color: rgb(27, 200, 62);
+}
+
+
+.form-button-see-profile{
+    width: 316px;
+    height: 30px;
+    cursor: pointer;
+    background: var(--color-brand-1);
+    color: var(--color-grey-7);
+    border: none;
+}
+
+
+
+
+.disable-button{
+    background: var(--color-brand-3);
+    color: var(--color-grey-6);
+    
+}
